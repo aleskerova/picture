@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<link rel="icon" href="img/javascript.png">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<p id="demo" onclick="myFunction()">Click me.</p>
+
+<script>
+function myFunction() {
+    var picture = document.body.appendChild ( document.createElement ( 'img' ) )
+picture.style.transition = "all 0.5s"
+picture.style.width = "100px"
+picture.src = "https://img.purch.com/h/1000/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA5Ny83NDIvb3JpZ2luYWwvbWFjYXF1ZS1oZXJwZXMtbGV0aGFsLXRvLWh1bWFucw=="
+
+
+
+picture.onmouseenter = function ( event ) {
+        this.style.width = "200px"
+}
+picture.onclick = function ( event ) {
+        this.style.width = "0px"
+}
+
+}
+</script>
+	
+</body>
+</html>
